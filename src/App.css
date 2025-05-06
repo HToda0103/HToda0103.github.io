@@ -1,0 +1,248 @@
+/* Base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: #000000;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+a {
+  color: #00ffd5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000000;
+  padding: 16px 32px;
+  border-bottom: 1px solid #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.6rem;
+  color: #00ffd5;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #cccccc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00ffd5;
+}
+
+/* Hero */
+#hero {
+  background: #000000;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #00ffd5;
+  box-shadow: 0 8px 25px rgba(0, 255, 213, 0.15);
+  margin-bottom: 16px;
+}
+
+.hero-content h2 {
+  font-size: 2.3rem;
+  margin-bottom: 6px;
+}
+
+.hero-content p {
+  font-size: 1.05rem;
+  color: #aaa;
+  margin-top: 0;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #00ffd5, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Section */
+section {
+  scroll-margin-top: 100px; /* ← 固定ヘッダーの高さ分を考慮 */
+  padding: 32px 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+/* Card-like Container */
+.project-list,
+.resarch_thema-list,
+section#about,
+section#skills,
+section#services,
+section#contact {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 213, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  margin-bottom: 40px;
+}
+
+/* Skills & Services */
+.skill-list, .service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.skill-list li, .service-list li {
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 4px solid #00ffd5;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* Projects */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(6px);
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 255, 213, 0.12);
+}
+
+
+/* ResearchThema */
+.resarch_thema-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.resarch_thema-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+
+.thema-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(6px);
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.thema-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 255, 213, 0.12);
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 24px 0;
+  background: #000000;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 24px 16px;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+}
