@@ -2,7 +2,7 @@ import React from 'react'
 
 function ResearchThemaList({resarchthemas}){
   return (
-    <section id="research_thema">
+    <section id="research thema">
     <h3>Research_thema</h3>
     <div className="resarch_thema-list">
       {resarchthemas.map((researchthema, index) => (

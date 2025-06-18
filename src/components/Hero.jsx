@@ -1,7 +1,7 @@
 import React from "react";
 import image from "../IMG_0600.JPG"
 
-const Hero = () => {
+function Hero(){
   return (
     <section id="hero">
       <div className="hero-content">

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = () => {
+function Footer(){
     return (
   <footer>
     <p>2025 Hiyori Toda</p>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact = () => {
+function Contact(){
     return (
   <section id="contact">
     <h3>Contact</h3>
